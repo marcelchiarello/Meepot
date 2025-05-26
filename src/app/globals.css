@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 262.1 83.3% 57.8%; /* #8B5CF6 Vibrant purple */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 24.6 95% 53.1%; /* #F97316 Warm orange */
+    --secondary-foreground: 0 0% 98%;
+    
+    --accent: 172.1 80.7% 40.8%; /* #14B8A6 Teal */
+    --accent-foreground: 0 0% 98%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 262.1 83.3% 57.8%; /* Primary color for rings */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 262.1 83.3% 57.8%; /* #8B5CF6 Vibrant purple */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 24.6 95% 53.1%; /* #F97316 Warm orange */
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 172.1 80.7% 40.8%; /* #14B8A6 Teal */
+    --accent-foreground: 0 0% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 262.1 83.3% 57.8%; /* Primary color for rings */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
